@@ -1,3 +1,10 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+//package showdown;
+
 public class Batter extends Player{
     
     // Stores weather the Batter is on base or not, if so, what base is he on
@@ -13,7 +20,7 @@ public class Batter extends Player{
      *  Takes in pOut, pSing, pDoub, pTrip, pHr0, onBase Then sets these as the objects variables.
      * 
     **/
-    public Batter(int in_Out, int in_Sing, int in_Doub, int in_Trip, int in_Hr0, int in_onBase){
+    public Batter(int in_Out, int in_Sing, int in_Doub, int in_Trip, int in_Hr0, int in_onBase, String name){
     
         Out = in_Out;
         
@@ -26,6 +33,8 @@ public class Batter extends Player{
         Hr0 = in_Hr0;
         
         onBase = in_onBase;
+        
+        playersName = name;        
         
     }
     

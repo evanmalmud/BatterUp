@@ -1,8 +1,14 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+//package showdown;
 
 /**
  *  public class Player
  * 
- *  a Player object which will store pitecher stats
+ *  a Player object which will store pitcher stats
  * 
 **/
 public class Player{
@@ -17,6 +23,8 @@ public class Player{
     public int Trip;
     //pTrip-pHr0 if rolled outcome is HoemRun
     public int Hr0;
+    // players name
+    public String playersName;
     
     
     // Setters for all variables
@@ -35,6 +43,9 @@ public class Player{
     public void set_Hr0(int in_Hr0){
         Hr0 = in_Hr0;
     } 
+    public void set_playersName(String name){
+        playersName = name;
+    }    
     
     
     // Getters for all variables
@@ -52,7 +63,8 @@ public class Player{
     } 
     public int get_Homerun(){
         return Hr0;
-    } 
+    }
+    public String get_playersName(){
+        return playersName;
+    }    
 }
-    
-    
